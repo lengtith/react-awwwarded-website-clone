@@ -1,7 +1,16 @@
+import LandingPage from "./components/LandingPage";
+import Marque from "./components/Marque";
+import Navbar from "./components/Navbar";
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 export default function App() {
+  const scroll = new LocomotiveScroll();
   return (
-    <h1 className="text-3xl text-red-500 font-bold underline">
-      Hello world!
-    </h1>
+    <div className="w-full h-screen font-FoundersGrotesk font-bold">
+      <Navbar />
+      <LandingPage />
+      <Marque />
+    </div>
   )
 }

@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        icomoon: ["icomoon"],
+        FoundersGrotesk: ["Founders Grotesk"],
+      }
+    },
+    fontSize: {
+      '10xl': [ '9rem' ]
+    }
   },
   plugins: [],
 }
